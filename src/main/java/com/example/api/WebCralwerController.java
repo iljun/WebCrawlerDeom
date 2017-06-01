@@ -33,9 +33,12 @@ public class WebCralwerController {
     }
 
     @RequestMapping(value = "/gameInfo2", method = RequestMethod.GET)
-    public void sport() throws Exception{
-        System.out.println("lolGame start");
-        webCralwer.lolGame();
-        System.out.println("lolGame end");
+    public String sport() throws Exception{
+        return webCralwer.lolGame();
+    }
+
+    @RequestMapping(value = "/3", method = RequestMethod.GET)
+    public String test() throws Exception{
+        return webCralwer.test();
     }
 }

@@ -20,6 +20,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 repositories {
 	mavenCentral()
 }
@@ -39,4 +41,9 @@ dependencies {
 
 	compile("org.springframework.boot:spring-boot-devtools")
 
+}
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
 }

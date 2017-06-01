@@ -2,3 +2,15 @@ spring :
  devtools :
   livereload :
     enabled : true
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  velocity:
+    charSet: UTF-8
+    properties:
+      input:
+        encoding: UTF-8
+    output:
+      encoding: UTF-8
